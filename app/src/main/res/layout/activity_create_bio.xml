@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Here is your free automated bio!"
-        android:textColor="@color/colorAccent"
+        android:textColor="?attr/actionMenuTextColor"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

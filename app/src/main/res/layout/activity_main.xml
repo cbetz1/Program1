@@ -10,14 +10,14 @@
 
     <TextView
         android:id="@+id/header"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:layout_marginBottom="41dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="26dp"
         android:text="Create your own bio right here! Fill out each field and press the button!"
-        android:textColor="@color/colorAccent"
+        android:textColor="?attr/actionMenuTextColor"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/create_bio"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +31,7 @@
 
     <EditText
         android:id="@+id/first_name"
-        android:layout_width="match_parent"
+        android:layout_width="395dp"
         android:layout_height="41dp"
         android:layout_marginBottom="13dp"
         android:ems="10"
@@ -46,7 +46,7 @@
 
     <EditText
         android:id="@+id/last_name"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="11dp"
         android:ems="10"
@@ -61,7 +61,7 @@
 
     <EditText
         android:id="@+id/school"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
@@ -76,7 +76,7 @@
 
     <EditText
         android:id="@+id/year_grad"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
@@ -91,7 +91,7 @@
 
     <EditText
         android:id="@+id/degree"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="13dp"
         android:ems="10"
@@ -106,7 +106,7 @@
 
     <EditText
         android:id="@+id/major"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
@@ -121,7 +121,7 @@
 
     <EditText
         android:id="@+id/fav_activities"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginBottom="41dp"
         android:ems="10"
@@ -137,12 +137,12 @@
 
     <Button
         android:id="@+id/create_bio"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginBottom="26dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@color/colorPrimary"
         android:onClick="onGenerateBio"
         android:text="Generate Bio"
         android:textColor="@android:color/background_light"
