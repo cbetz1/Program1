@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chad.program1.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:text="Create your own bio right here! Fill out each field and press the button!"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/create_bio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/last_name"
+        app:layout_constraintLeft_toLeftOf="@+id/create_bio"
+        app:layout_constraintRight_toRightOf="@+id/create_bio"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/school"
+        app:layout_constraintLeft_toLeftOf="@+id/first_name"
+        app:layout_constraintRight_toRightOf="@+id/first_name"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/school"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="School"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/year_grad"
+        app:layout_constraintLeft_toLeftOf="@+id/last_name"
+        app:layout_constraintRight_toRightOf="@+id/last_name"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/year_grad"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Year of Graduation"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/degree"
+        app:layout_constraintLeft_toLeftOf="@+id/school"
+        app:layout_constraintRight_toRightOf="@+id/school"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/degree"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Degree (BS/BA/ect)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/major"
+        app:layout_constraintLeft_toLeftOf="@+id/year_grad"
+        app:layout_constraintRight_toRightOf="@+id/year_grad"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/major"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Major"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fav_activities"
+        app:layout_constraintLeft_toLeftOf="@+id/degree"
+        app:layout_constraintRight_toRightOf="@+id/degree"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/fav_activities"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Favorite Activities"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/major"
+        app:layout_constraintRight_toRightOf="@+id/major"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+
+    <Button
+        android:id="@+id/create_bio"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onGenerateBio"
+        android:text="Generate Bio"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/first_name"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
